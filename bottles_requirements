@@ -1,0 +1,47 @@
+what should the user be able to do?
+
+create an item for dibbs
+	name
+	description
+	quantity
+	default_for_dibbs_quantity_per_person
+	require_approval?
+	
+List of available items for dibbs
+Instructions on how to:
+	acquire the item
+	anything needed to be returned
+login?
+coupon code?
+
+list of pages
+
+list_all_dibbs
+	add
+	edit
+	delete
+	lower_quantity
+	generate_coupon
+
+list_available_dibbs
+	call_dibbs
+
+
+models
+
+	item
+		name
+		description
+		total_quantity
+		max_per_person
+	reservation
+		item_id
+		user_id
+		coupon_id
+		quantity
+	user
+		name
+		email
+	coupon
+		code
+		item_id
