@@ -1,7 +1,14 @@
+<% content_for :sidebar do %>
+	<%= link_to 'edit', edit_item_path(params[:id]) %>
+<% end %>
+
 <div class="">
-	
 	<span class="record_field">Name:</span>
+	<span class="record_value"><%= @item.name %></span>
+	
 	<br>
-	Name: <%= @item.name %>
+	
+	<span class="record_field">Description:</span>
+	<span class="record_value"><%= @item.description %></span>
 	
 </div>
