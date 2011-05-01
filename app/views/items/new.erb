@@ -1,19 +1,5 @@
 <% content_for :sidebar do %>
-<%= link_to 'back' %>
+	<%= link_to 'back', :back %>
 <% end %>
 
-<%= form_for :item, @item, :url => { :action => "create" }, :html => {:class => "nifty_form"} do |f| %>
-	<p>
-		<label for="">Name</label>
-		<br>
-		<%= f.text_field :name, :class => 'title' %>
-	</p>
-	
-	<p>
-		<label for="">Description</label>
-		<br>
-		<%= f.text_area :description, :size => "60x12" %>
-	</p>
-	
-  <%= submit_tag "Create" %>
-<% end %>
+<%= render 'form' %>

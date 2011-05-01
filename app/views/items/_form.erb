@@ -1,0 +1,22 @@
+<%= form_for :item, @item, :url => { :action => "create" }, :html => {:class => "nifty_form"} do |f| %>
+	<p>
+		<label for="">Name</label>
+		<br>
+		<%= f.text_field :name, :class => 'title' %>
+	</p>
+	
+	<p>
+		<label for="">Description</label>
+		<br>
+		<%= f.text_area :description, :size => "60x12" %>
+	</p>
+
+	<p>
+		<label for="">Quantity</label>
+		<br>
+		<%= f.text_field :total_quantity, :class => 'title' %>
+	</p>
+	
+	
+  <%= submit_tag "Create" %>
+<% end %>
