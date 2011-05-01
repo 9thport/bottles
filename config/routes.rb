@@ -1,4 +1,13 @@
 Bottles::Application.routes.draw do
+  
+  resources :items
+  
+  # get "items/all"
+  # 
+  # get "items/abailable"
+  # 
+  # get "items/remaining"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  total_quantity: 1
+  max_per_person: 1
+
+two:
+  name: MyString
+  description: MyText
+  total_quantity: 1
+  max_per_person: 1
